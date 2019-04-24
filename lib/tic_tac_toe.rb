@@ -31,4 +31,6 @@ WIN_COMBINATION = [
     
   end
   
-  def position_taken?()
+  def position_taken?(board, index)
+    
+    !(board[index])
