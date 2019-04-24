@@ -89,5 +89,7 @@ WIN_COMBINATION = [
     
     if valid_move?(board, index)
       
-      player_token = 
+      player_token = current_player(board)
+      
+      
     
