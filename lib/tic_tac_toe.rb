@@ -137,7 +137,7 @@ end
 
 def full?(board)
   
-  
+  board.all?{|index| 
   
   
     
