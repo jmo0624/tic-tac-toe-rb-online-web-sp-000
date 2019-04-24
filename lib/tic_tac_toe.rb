@@ -45,4 +45,6 @@ WIN_COMBINATION = [
   
   def turn_count(board)
     
-    turn
+    turn = 0
+    
+    
