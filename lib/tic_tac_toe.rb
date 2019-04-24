@@ -67,11 +67,11 @@ def current_player(board)
     
   if num_turns % 2 == 0
       
-    player = "X"
+    player = "O"
       
   else
       
-    player = "O"
+    player = "X"
       
   end
     
