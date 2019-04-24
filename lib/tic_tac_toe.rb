@@ -67,4 +67,8 @@ WIN_COMBINATION = [
     
     if num_turns % 2 == 0
       
+      player = "X"
       
+    else
+      
+      player = "O"
