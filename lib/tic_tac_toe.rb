@@ -65,4 +65,6 @@ WIN_COMBINATION = [
     
     num_turns = turn_count(board)
     
-    
+    if num_turns % 2 == 0
+      
+      
