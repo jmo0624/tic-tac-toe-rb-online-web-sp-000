@@ -91,5 +91,7 @@ WIN_COMBINATION = [
       
       player_token = current_player(board)
       
+      move(board, index, player_token)
+      
       
     
