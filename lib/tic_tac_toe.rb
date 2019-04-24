@@ -47,4 +47,6 @@ WIN_COMBINATION = [
     
     turn = 0
     
-    
+    board.each do |index|
+      
+      if
