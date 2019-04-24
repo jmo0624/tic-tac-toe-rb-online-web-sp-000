@@ -99,5 +99,9 @@ WIN_COMBINATION = [
       
       turn(board)
       
-      
+    end
+    
+  end
+  
+  
     
