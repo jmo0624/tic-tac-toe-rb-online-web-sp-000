@@ -85,5 +85,5 @@ WIN_COMBINATION = [
     
     user_input = gets.chomp
     
-    
+    index = input_to_index(board)
     
