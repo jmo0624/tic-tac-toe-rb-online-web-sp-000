@@ -61,4 +61,8 @@ WIN_COMBINATION = [
     
   end
   
-  
+  def current_player(board)
+    
+    num_turns = turn_count(board)
+    
+    
