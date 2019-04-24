@@ -9,131 +9,133 @@ WIN_COMBINATION = [
   [2, 4, 6]
   ]
   
-  def display_board(board)
+def display_board(board)
     
-    puts " #{board[0]} | #{board[1]} | #{board[2]} "
-    puts "-----------"
-    puts " #{board[3]} | #{board[4]} | #{board[5]} "
-    puts "-----------"
-    puts " #{board[6]} | #{board[7]} | #{board[8]} "
+  puts " #{board[0]} | #{board[1]} | #{board[2]} "
+  puts "-----------"
+  puts " #{board[3]} | #{board[4]} | #{board[5]} "
+  puts "-----------"
+  puts " #{board[6]} | #{board[7]} | #{board[8]} "
     
-  end
+end
   
-  def input_to_index(user_input)
+def input_to_index(user_input)
     
-    user_input.to_i - 1
+  user_input.to_i - 1
     
-  end
+end
   
-  def move(board, index, current_player)
+def move(board, index, current_player)
     
-    board[index] = current_player
+  board[index] = current_player
     
-  end
+end
   
-  def position_taken?(board, index)
+def position_taken?(board, index)
     
-    !(board[index].nil? || board[index] == " ")
+  !(board[index].nil? || board[index] == " ")
     
-  end
+end
   
-  def valid_move?(board, index)
+def valid_move?(board, index)
     
-    index.between(0, 8) && !position_taken(board, index)
+  index.between(0, 8) && !position_taken(board, index)
     
-  end
+end
   
-  def turn_count(board)
+def turn_count(board)
     
-    turn = 0
+  turn = 0
     
-    board.each do |index|
+  board.each do |index|
       
-      if index == "X" || index == "0"
+    if index == "X" || index == "0"
         
-        turn _+= 1
+      turn _+= 1
         
-      end
-      
     end
-    
-    return turn
-    
+      
   end
+    
+  return turn
+    
+end
   
-  def current_player(board)
+def current_player(board)
     
-    num_turns = turn_count(board)
+  num_turns = turn_count(board)
     
-    if num_turns % 2 == 0
+  if num_turns % 2 == 0
       
-      player = "X"
+    player = "X"
       
-    else
+  else
       
-      player = "O"
+    player = "O"
       
-    end
-    
-    return player
-    
   end
+    
+  return player
+    
+end
   
-  def turn(board)
+def turn(board)
     
-    puts "Please choose a number 1-9:"
+  puts "Please choose a number 1-9:"
     
-    user_input = gets.chomp
+  user_input = gets.chomp
     
-    index = input_to_index(user_input)
+  index = input_to_index(user_input)
     
-    if valid_move?(board, index)
+  if valid_move?(board, index)
       
-      player_token = current_player(board)
+    player_token = current_player(board)
       
-      move(board, index, player_token)
+    move(board, index, player_token)
       
-      display_board(board)
+    display_board(board)
       
-    else
+  else
       
-      turn(board)
+    turn(board)
       
-    end
-    
   end
+    
+end
   
-  def won?(board)
+def won?(board)
     
-    WIN_COMBINATIONS.each {|win_combo|
+  WIN_COMBINATIONS.each {|win_combo|
     
-     index_0 = win_combo[0]
+   index_0 = win_combo[0]
     
-     index_1 = win_combo[1]
+    index_1 = win_combo[1]
     
-     index_2 = win_combo[2]
+    index_2 = win_combo[2]
   
-     position_1 = board[index_0]
+    position_1 = board[index_0]
     
-     position_2 = board[index_1]
+    position_2 = board[index_1]
       
-     position_3 = board[index_2]
+    position_3 = board[index_2]
 
-      if position_1 == "X" && position_2 == "X" && position_3 == "X"
+    if position_1 == "X" && position_2 == "X" && position_3 == "X"
     
-        return win_combo
+      return win_combo
    
-     elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+    elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
     
-        return win_combo
+      return win_combo
     
-     end
+    end
   
        
-    }
-   return false
+  }
+  return false
 
 end
 
-
+def full?(board)
+  
+  
     
