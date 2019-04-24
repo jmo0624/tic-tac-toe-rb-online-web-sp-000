@@ -72,3 +72,11 @@ WIN_COMBINATION = [
     else
       
       player = "O"
+      
+    end
+    
+    return player
+    
+  end
+  
+  
