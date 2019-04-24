@@ -79,4 +79,6 @@ WIN_COMBINATION = [
     
   end
   
-  
+  def turn(board)
+    
+    
