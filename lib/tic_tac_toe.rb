@@ -81,4 +81,4 @@ WIN_COMBINATION = [
   
   def turn(board)
     
-    
+    puts "Please choose a number 1-9: "
