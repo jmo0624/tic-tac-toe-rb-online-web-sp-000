@@ -209,7 +209,9 @@ def play(board)
     
   elsif draw?(board)
   
-    puts "Cats game"
+    puts "Cats Game!"
+    
+    
   
   
   
