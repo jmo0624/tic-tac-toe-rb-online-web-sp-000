@@ -51,4 +51,12 @@ WIN_COMBINATION = [
       
       if index == "X" || index == "0"
         
+        turn _+= 1
         
+      end
+      
+    end
+    
+    return turn
+    
+  end
