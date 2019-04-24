@@ -9,5 +9,6 @@ WIN_COMBINATION = [
   [2, 4, 6]
   ]
   
-  def display_board = [
-    ]
+  def display_board(board)
+    
+    
