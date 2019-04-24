@@ -93,5 +93,7 @@ WIN_COMBINATION = [
       
       move(board, index, player_token)
       
+      display_board(board)
+      
       
     
