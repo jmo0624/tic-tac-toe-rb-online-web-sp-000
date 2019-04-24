@@ -203,7 +203,9 @@ def play(board)
     
   end
   
-  if
+  if won?(board)
+    
+    puts ""
   
   
   
