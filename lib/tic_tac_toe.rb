@@ -30,3 +30,5 @@ WIN_COMBINATION = [
     board[index] = current_player
     
   end
+  
+  def position_taken?()
