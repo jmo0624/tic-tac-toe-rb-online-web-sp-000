@@ -103,5 +103,7 @@ WIN_COMBINATION = [
     
   end
   
-  
+  def won?(board)
+    
+    
     
