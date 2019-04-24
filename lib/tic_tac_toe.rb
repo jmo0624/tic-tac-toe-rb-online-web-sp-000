@@ -49,4 +49,6 @@ WIN_COMBINATION = [
     
     board.each do |index|
       
-      if
+      if index == "X" || index == "0"
+        
+        
