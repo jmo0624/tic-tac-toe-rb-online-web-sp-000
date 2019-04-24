@@ -95,5 +95,9 @@ WIN_COMBINATION = [
       
       display_board(board)
       
+    else
+      
+      turn(board)
+      
       
     
