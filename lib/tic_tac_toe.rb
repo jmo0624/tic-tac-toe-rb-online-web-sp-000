@@ -51,7 +51,7 @@ def turn_count(board)
       
     if index == "X" || index == "0"
         
-      turn _+= 1
+      turn += 1
         
     end
       
