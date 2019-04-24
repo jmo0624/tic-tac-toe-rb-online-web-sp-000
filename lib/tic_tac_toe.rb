@@ -175,7 +175,7 @@ def winner(board)
   
   index = won?(board)
   
-  
+  if index 
   
   
     
