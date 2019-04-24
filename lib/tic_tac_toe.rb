@@ -181,7 +181,7 @@ def winner(board)
     
   else
     
-    
+    if board[index[0]] == 
   
   
     
